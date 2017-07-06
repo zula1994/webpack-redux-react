@@ -1,3 +1,7 @@
-export default function (state = {}, action) {
-  return { data: action.data };
-}
+import { combineReducers } from 'redux';
+import appleBasketReducer from './appleReducer';
+const rootReducer = combineReducers({
+    appleBasket: appleBasketReducer
+});
+
+export default rootReducer;

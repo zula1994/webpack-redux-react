@@ -9,7 +9,6 @@ import '../css/common.scss';
 
 // pages
 import Page1 from './page1/index';
-import Page2 from './page2/index';
 import Page3 from './page3/index';
 
 class Application extends Component {
@@ -35,7 +34,7 @@ render((
       <Route path="/" component={Application}>
         <IndexRoute component={Page1}/>
         <Route path="page1" component={Page1}></Route>
-        <Route path="page2" component={Page2}></Route>
+        <Route path="page2" component={Page1}></Route>
         <Route path="page3" component={Page3}></Route>
       </Route>
     </Router>
